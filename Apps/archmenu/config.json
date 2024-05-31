@@ -1,0 +1,10 @@
+{
+    "window": {
+        "width": 600,
+        "height": 500
+    },
+    "colors": {
+        "background": "#1E1D2F",
+        "foreground": "#D9E0EE"    
+    }
+}

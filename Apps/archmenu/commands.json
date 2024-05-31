@@ -1,0 +1,47 @@
+[
+    {
+        "label": "Google Chrome",
+        "shell": "google-chrome-stable",
+        "icon": "/home/yurii/Pictures/icons/chrome.svg"
+    },
+    {
+        "label": "Alacritty",
+        "shell": "alacritty",
+        "icon": "/home/yurii/Pictures/icons/alacritty.svg"
+    },
+    {
+        "label": "Visual Studio Code",
+        "shell": "code",
+        "icon": "/home/yurii/Pictures/icons/code.svg"
+    },
+    {
+        "label": "Microsoft Teams",
+        "shell": "teams",
+        "icon": "/home/yurii/Pictures/icons/teams.svg"
+    },
+    {
+        "label": "Telegram",
+        "shell": "telegram-desktop",
+        "icon": "/home/yurii/Pictures/icons/telegram.svg"
+    },
+    {
+        "label": "Discord",
+        "shell": "discord",
+        "icon": "/home/yurii/Pictures/icons/discord.svg"
+    },
+    {
+        "label": "Remmina",
+        "shell": "remmina",
+        "icon": "/home/yurii/Pictures/icons/remmina.png"
+    },
+    {
+        "label": "Restart",
+        "shell": "reboot",
+        "icon": "/home/yurii/Pictures/icons/restart.svg"
+    },
+    {
+        "label": "Power off",
+        "shell": "poweroff",
+        "icon": "/home/yurii/Pictures/icons/shutdown.png"
+    }
+]
