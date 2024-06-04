@@ -1,0 +1,9 @@
+#!/bin/bash
+
+BAR_NAME="main"
+
+if pgrep -x "polybar" > /dev/null; then
+    pkill polybar
+else
+    polybar $BAR_NAME &
+fi
