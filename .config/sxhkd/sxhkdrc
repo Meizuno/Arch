@@ -1,0 +1,80 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+    alacritty
+
+# toggle polybar
+super + p
+    sh $HOME/.config/polybar/toggle-polybar &
+
+# switch desktop
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
+
+# focus the last node/desktop
+super + Tab
+    bspc desktop -f last
+
+# make screenshot
+Print
+    flameshot gui &
+
+super + shift + s
+    flameshot gui &
+
+# move on windows
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
+
+# Change language
+Alt_L + shift
+    sh $HOME/bin/change_lang
+
+Shift_L + alt
+    sh $HOME/bin/change_lang
+
+# open rofi menu
+super + m
+     $HOME/Apps/archmenu/.venv/bin/python $HOME/Apps/archmenu/archmenu.py
+#    $HOME/.config/rofi/launch.sh
+
+# volume up
+XF86AudioRaiseVolume
+    amixer -q set Master 5%+ unmute
+
+# volume down
+XF86AudioLowerVolume
+    amixer -q set Master 5%- unmute
+
+# brightness up
+XF86MonBrightnessUp
+    brightnessctl set +5% > /dev/null 2>&1
+
+# brightness down
+XF86MonBrightnessDown
+    brightnessctl set 5%- > /dev/null 2>&1
+
+# close current window
+super + Escape
+    bspc node -c
+
+# open powermenu
+super + d
+   sh $HOME/bin/powermenu
+
+# lock screen
+super + l
+   dm-tool lock
+
+# restart bspwm
+ctrl + super + r
+   bspc wm -restart
+   sh $HOME/.config/polybar/toggle-polybar &
+
+# Move active window to desktop 1-9 and follow it
+ctrl + shift + {1-9}
+    bspc node -d ^{1-9}; bspc desktop -f ^{1-9}
+
