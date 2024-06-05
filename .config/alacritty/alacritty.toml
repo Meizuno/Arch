@@ -1,0 +1,29 @@
+[window]
+opacity = 0.8
+padding.x = 5
+padding.y = 5
+blur = false
+
+[cursor.style]
+blinking = "Always"
+shape = "Beam"
+
+[shell]
+program = "/usr/bin/fish"
+
+[font]
+builtin_box_drawing = true
+size = 16.0
+
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
